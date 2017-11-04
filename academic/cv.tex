@@ -5,7 +5,7 @@
 \usepackage{hyperref}
 %______________________________________________________________________________________________________________________
 \begin{document}
-\name{\Large Michael Kocher}
+\name{\Large{Michael Kocher}}
 \begin{resume}
 
     %__________________________________________________________________________________________________________________
@@ -13,7 +13,7 @@
     \section{\mysidestyle Contact\\Information}
 
     San Francisco, CA\hfill e-mail: michael.kocher@me.com\\\vspace{4.0mm}
-    \hfill{\url{https://github.com/mpkocher}}%
+    \hfill{\url{https://github.com/mpkocher}}\\\vspace{-9.0mm}
 
     % end Contact
     % end -----------------------------------------------
@@ -38,13 +38,10 @@
     % Tools and Frameworks
     \section{\mysidestyle Programming, Tools and Frameworks}
 
-    \textbf{Languages}: Scala, Python, SQL, R, Ruby\vspace{2mm}\\
-                Extensive experience with PBS, Slurm and SGE for running high-throughput
-                computations on HPC systems. MongoDB and SQL for database driven
-                applications and experienced with object-oriented programming using
-                Python and Ruby. Skilled in several web frameworks, such as Django, Flask, Sinatra for designing web
-                applications. 8 years of experience with Vienna
-                \textsl{ab initio} Simulation Package (VASP) and Wien2k to compute properties of materials from first principles. Proficient with Bash for general scripting and system administration. Git for source code version control.
+    \textbf{Languages and Technologies}: Scala, Python, PostgreSQL, MongoDB, R and Git\vspace{2mm}\\
+                Experience with Scala, Akka, and Slick to drive scientific applications using an Agile process. MongoDB and SQL for database driven applications and experienced with object-oriented programming using
+                Scala, Python and Ruby. Extensive experience with PBS, Slurm and SGE for running high-throughput computations on HPC systems. 8+ years of experience with Vienna
+                \textsl{ab initio} Simulation Package (VASP) and Wien2k to compute properties of materials from first principles. Knowledgeable Bash for general scripting and system administration and R for data analysis.
 
 
   % End tools Frameworks
@@ -54,39 +51,46 @@
    % Research Interests
     \section{\mysidestyle Research\\Interests}
 
-    High-throughput computing, workflows, \textsl{ab initio} materials science
+    Data Processing and Analysis, High-throughput computing, workflows, data pipelines, HPC computing, \textsl{ab initio} materials science
     and chemistry, document based data storage (MongoDB), message queues, scientific gateways and RESTful interfaces for web driven scientific applications.
 
   % Research Interests 
   % end -----------------------------------------------
-
-  % Awards ----------------------------------------------------------------
-    \section{\mysidestyle Awards}
-    LBNL Spot Prize: ``For outstanding and inspiring
-      work on the Materials Project'' \hfill January 2012\vspace{2mm}\\
-    Top Prize in the LBNL 2010 Mobility Contest: \hfill February 2010\\
-      ``Mobility Materials Genome: iPhone app to
-       accelerate materials design process''
-
-  % end Awards
-  % end -----------------------------------------------
     
   % Professional Experience
-       \section{\mysidestyle Professional\\Experience}
+  \section{\mysidestyle Professional\\Experience}
+  \textbf{Senior Staff Engineer}\hfill June 2015 -- present\vspace{1mm}\\
+     Pacific Biosciences, Menlo Park, CA\\\vspace{-3.0mm}
+       \begin{list2}
+       \item Secondary Analysis Infrastructure Tech Lead for the Sequel Release (SMRT Link 3.0) and member of the Architectural Review Board (ARB)
+       \item Lead migration from Python/Java to Scala for maintainability (\href{https://github.com/PacificBiosciences/smrtflow}{smrtflow})
+       \item Lead author for PacBio workflow engine (\href{https://github.com/PacificBiosciences/pbsmrtpipe}{pbsmrtpipe})
+       \item Lead author for PacBio python common core library, \href{https://github.com/PacificBiosciences/pbcommand}{pbcommand} and the (internal) R companion, pbcommandr
+   \end{list2}
+
+     \textbf{Senior Scientist, Staff Engineer}\hfill December 2012 -- June 2015\vspace{1mm}\\
+       Pacific Biosciences, Menlo Park, CA\\\vspace{-3.0mm}
+   \begin{list2}
+   \item Introduced a streaming Monoid-ish model for computing report metrics in \href{https://github.com/PacificBiosciences/pbreports}{pbreports} package to address scalability issues and keep memory usage approximately constant.
+   \item Convienced and implemented core testing framework (pysiv) to enable pipeline testing. This framework was folded back into the pipeline engine (\href{https://github.com/PacificBiosciences/pbsmrtpipe}{pbsmrtpipe}) and is still currently in use.
+   \item Contributed to converting pbpy mono-repo into smaller, more maintable and testable python packages.
+   \item Pipeline feature development and maintenance of the SMRT Analysis 2.x workflow engine.
+   \end{list2}
+
     \textbf{Postdoctoral Chemist Researcher} \hfill January 2009 -- April 2012\vspace{1mm}\\
-		Environmental Energy Technology Division \\
 		Lawrence Berkeley National Lab, Berkeley, CA\\
-		Advisor: Dr. Kristin Persson\\\vspace{-1.5mm}
+		Environmental Energy Technology Division. Advisor: Dr. Kristin Persson\\\vspace{-3.0mm}
     \begin{list2}
-			\item Materials Project (\url{http://www.materialsproject.org}) lead developer and core database administrator
+			\item Materials Project (\url{http://www.materialsproject.org}) lead developer and core database administrator. Designed NoSQL database driven scientific applications using Django and MongoDB
 			\item Designed a distributed high-throughput workflow engine to perform MPI VASP calculations across several HPC centers
-      \item designed NoSQL database driven scientific applications using Django and MongoDB
 		  \item Performed calculation to investigate the role of Al substitution in Li transition metal oxides to understand Li diffusion, cation ordering and stability
 		 \item Phonon calculations using \textsl{ab initio} quantum molecular dynamic simulations on $\mathrm{LiMnO_2}$ and $\mathrm{LiMn_2O_4}$ to determine thermal free energies and diffusion properties from first principles
      \item Performed electronic structure calculations on $\mathrm{LiC_x}$ and various Li transition metal oxides to understand the charge compensation mechanism during delithation
 		\end{list2}
 
+    \newpage
     % Graduate research
+      \section{\mysidestyle Professional\\Experience (cont.)}
 		\textbf{Graduate Research Assistant} \hfill September 2004 -- December 2008\vspace{1mm}\\
 		Center for Solid State Science\\
 Arizona State University Tempe\\
@@ -97,9 +101,6 @@ Advisor: Prof. Peter Rez\\\vspace{-1.5mm}
 			\item Surface interactions of Aspartic and Glutamic Acid on $\mathrm{Ca(C_2O_4)(H_2O)}$
 			\item Calculations on 5,7 defects in single wall carbon nanotubes
 		\end{list2}
-
-
-    \newpage
 
     % undergraduate research
 
@@ -137,6 +138,17 @@ Advisor: Prof. Tim Steimle\\\vspace{-1.5mm}
 		\end{list2}
 
   % Professional Experience
+    % end -----------------------------------------------
+
+      % Awards ----------------------------------------------------------------
+    \section{\mysidestyle Awards}
+    LBNL Spot Prize: ``For outstanding and inspiring
+      work on the Materials Project'' \hfill January 2012\vspace{2mm}\\
+    Top Prize in the LBNL 2010 Mobility Contest: \hfill February 2010\\
+      ``Mobility Materials Genome: iPhone app to
+       accelerate materials design process''
+
+  % end Awards
   % end -----------------------------------------------
 
   % Selected Publications ------------------------------------------------
@@ -147,7 +159,7 @@ Advisor: Prof. Tim Steimle\\\vspace{-1.5mm}
     M.P. Kocher, D.A. Muller and P. Rez,, "The Oxygen K Edge in Strontium Titanate and Lanthanum Titanate", \textsl{Microscopy and Microanalysis}, (suppl. 2), 9, 842 (2003).\vspace{2mm}\\
     A. V. G. Chizmeshya, M. J. McKelvy, G. Wolf, M. Kocher, D. Gormley, "Quantum Simulations Studies of Olivine Mineral Carbonation", \textsl{Proc. 28th International Technical Conference on Coal Utilization   \& Fuel Systems} 319-330 (2003).
 
-
+   \newpage
 		\section{\mysidestyle Conference Presentations and
                   Posters}
                 ``Using Python to Accelerate Materials Design'',
@@ -158,8 +170,6 @@ Advisor: Prof. Tim Steimle\\\vspace{-1.5mm}
                 ``The Effect of Al Substitution in Lithium Transition Metal Oxides from First-principles'' Michael Kocher, Kristin A. Persson and Quentin M. Ramasse. Materials Research Society Spring Meeting, San Francisco, CA April (2010)\vspace{2mm}\\
 		``Does Ni change its charge state in $\mathrm{Li(Mn_{0.5}Ni_{0.5})O_2}$ cathode materials?'' Peter Rez and Michael Kocher. 208 Electrochemical Society Meeting, Los Angeles, California, October (2005) \vspace{2mm}\\
 		``Local Electronic Structure of Layered $\mathrm{Li_{x}Mn_{1/3}Ni_{1/3}Co_{1/3}O_{2}}$'' Brent Fultz, Shu Miao, Michael Kocher, Peter Rez, Yasuroni Ozawa, Rachid Yazami, and Channing Ahn. 208 Electrochemical Society Meeting, Los Angeles, California, October (2005) \vspace{2mm}\\
-
-    \newpage
 
 		``$\mathrm{CO_2}$ Mineral Carbonation Processes in
                   Olivine Feedstock: Insights from the Atomic Scale
