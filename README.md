@@ -4,6 +4,8 @@
 
 [Download PDF](https://github.com/mpkocher/cv/raw/master/academic/cv.pdf)
 
+[Home](https://mpkocher.github.io)
+
 ### Selected Projects
 
 #### Public Projects
